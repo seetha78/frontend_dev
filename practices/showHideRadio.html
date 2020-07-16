@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Show Hide Radio </title>
+    <script src="showHideRadio.js"></script>
+    </head>
+    <body>
+        
+        <div>
+            <label>Subscription: </label>
+
+            <label for="Free">
+                <input type="radio" id="free" name="Subscription"  value="free"  checked> Free
+            </label>
+
+            <label for="Premium">
+                <input type="radio" id="premium" name="Subscription" value="premium"> Premium
+            </label>
+            
+            <label for="Enterprise">
+                <input type="radio" id="enterprise" name="Subscription" value="enterprise"> Enterprise
+            </label>
+
+            <label for="Platinum">
+                <input type="radio" id="platinum" name="Subscription"  value="platinum"> Platinum
+            </label>
+               
+        </div>
+
+        <br>
+        <div id = "priceDiv" style="display:none;">
+            <input type="text" id="amount" onfocus=this.value="" onchange=computeTotal()>
+            <label> X </label>
+            <span id = "subVal"></span>
+            <label> $ = </label>
+            <span id= "totalVal"> 0 </span>
+            <label> $  </label>
+        </div>
+    </body>
+</html>
